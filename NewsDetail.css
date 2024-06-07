@@ -29,11 +29,24 @@ body{
     color: white;
     font-weight: 500;
 }
+@media screen and (max-width:767px){
+    .newDetails-Containers>h1{
+        font-size: 20px;
+      
+    }
+}
+
 .newDetails-Containers>p{
     font-size: 20px;
     color: whitesmoke;
     margin-top: 20px;
     font-weight: 300;
+}
+@media screen and (max-width:767px){
+    .newDetails-Containers>p{
+        font-size: 14px;
+        margin-top: 10px;
+    }
 }
 .newDetails-contents{
     display: flex;
@@ -41,6 +54,11 @@ body{
     align-items: center;
     gap: 20px;
     margin-top: 20px;
+}
+@media screen and (max-width:767px){
+    .newDetails-contents{
+        width: 350px;
+    }
 }
 .newDetails-Containers{
     text-align: center;
@@ -76,6 +94,13 @@ body{
      top:-50px; 
     
 }
+@media screen and (max-width:767px){
+    .newDetails-ConatinerImg{
+        
+        top:-25px; 
+       
+   }
+}
 
 .newDetails-ConatinerHeadingContents{
     display: flex;
@@ -85,9 +110,24 @@ body{
     gap: 20px;
     padding: 50px;
 }
+@media screen and (max-width:767px){
+    .newDetails-ConatinerHeadingContents{
+        display: block;
+        
+        padding: 20px;
+        overflow: hidden;
+    }
+}
 .newDetails-ConatinerImg>img{
     width: 100%;
     object-fit: cover;
+}
+@media screen and (max-width:767px){
+    .newDetails-ConatinerImg>img{
+        width: 300px;
+        height: 200px;
+        object-fit: cover;
+    }
 }
 .newDetails-Conatiners{
     width: 1000px;
@@ -117,6 +157,14 @@ body{
     justify-content: center;
     gap: 20px;
     
+}
+@media screen and (max-width:767px){
+    .blogs-containerS{
+        display: block;
+        padding: 10px;
+        margin-top: 20px;
+        
+    }
 }
 .blogs-container>h3{
     margin: 10px 0;
@@ -341,7 +389,7 @@ a{
 
 @media screen and (max-width:767px){
 .hamburgerMenu-nav{
-    /*display: none !important;*/
+    display: none !important;
    position: absolute;
    top:60px;
    left:0px;
