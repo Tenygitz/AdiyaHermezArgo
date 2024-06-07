@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Lexend", sans-serif;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 10000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color:rgb(121, 118, 110,0.5); 
+}
+
+
+@media screen and (max-width:767px) {
+    header{
+        display: flex;
+        padding: 10px;
+        margin: 0px 0px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+a{
+    text-decoration: none;
+}
+.logo img{
+    width: 100%;
+    height: 50px;
+    object-fit: contain;
+}
+@media screen and (max-width:767px) {
+    .logo img{
+        width: 50px;
+    }
+}
+.navBar>a{
+    font-size: 20px;
+    color: #2c2c2db4;
+    font-weight: 600;
+    margin-right: 30px;
+
+}
+.hamburgerMenu{
+    display: none;
+}
+@media screen and (max-width:767px) {
+    .hamburgerMenu{
+        display: block;
+    }
+}
+@media screen and (max-width:767px){
+    .navBar{
+        display: none;
+    }
+}
+
+@media screen and (max-width:767px){
+.hamburgerMenu-nav{
+    /*display: none !important;*/
+   position: absolute;
+   top:60px;
+   left:0px;
+   width: 100%;
+   background-color: whitesmoke;
+   box-shadow:5px 10px 30px 10px #d0d1d5d5;
+   z-index: 999;
+}}
+@media screen and (max-width:767px){
+.hamburgerMenu-nav>h3{
+    border: 1px solid rgb(240, 234, 234);
+    padding: 5px;
+    padding-left: 20px;
+}}
+@media screen and (max-width:767px){
+.hamburgerMenu-nav,a{
+    font-size: 17px;
+    color: gray;
+    font-weight: 400;
+}}
+@media screen and (max-width:767px){
+.hamburgerMenuIcon{
+    position: relative;
+    cursor: pointer;
+}}
+.navBar>a:hover{
+    color: rgb(28, 104, 245);
+}
+.registerBtn{
+    padding: 10px 20px;
+    background-color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.registerBtn>a{
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+}
+.registerBtn:hover{
+    background-color: rgb(119, 109, 109);
+}
