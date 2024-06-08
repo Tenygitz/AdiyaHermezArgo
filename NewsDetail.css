@@ -154,13 +154,20 @@ body{
     .newDetails-Conatiners{
         width: 100%;
         margin-top: 10px;
-       text-align: justify;
+        text-align: justify;
     }
 }
 .newDetails-Conatiners>p{
     margin-top: 10px;
     color: #464646;
     font-weight: 300;
+    font-size: 24px;
+}
+@media screen and (max-width:767px){
+    .newDetails-Conatiners>p{
+       
+        font-size: 15px;
+    }
 }
 .newDetails-Conatiners>h1{
    color:  #222222;
